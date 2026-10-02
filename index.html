@@ -3,116 +3,138 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Handwritten Projects</title>
-
+<meta name="theme-color" content="#102b50">
+<title>Vivekanand Hand Written Notes | Work From Home</title>
+<meta name="description" content="Explore handwritten notes work-from-home information, work process, requirements and joining details.">
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f5f8ff;color:#17233b}
-header{background:#fff;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 12px #0001}
-.logo{font-size:21px;font-weight:bold;color:#2457d6}
-nav a{margin-left:15px;text-decoration:none;color:#26334d;font-size:14px}
-.hero{padding:65px 7%;background:linear-gradient(120deg,#eaf1ff,#fff);text-align:center}
-.hero h1{font-size:38px;margin:10px 0;color:#172b58}
-.hero p{color:#5d6b83;line-height:1.7}
-.btn{display:inline-block;background:#2859dc;color:white;padding:14px 23px;border-radius:9px;text-decoration:none;font-weight:bold;margin-top:15px}
-section{padding:45px 7%;text-align:center}
-h2{font-size:28px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:25px}
-.card{background:white;padding:25px 18px;border-radius:15px;box-shadow:0 5px 22px #152c5010}
-.card h3{color:#2457d6}
-.price{font-size:30px;font-weight:bold;margin:18px 0}
-.card p{color:#65728a;line-height:1.6}
-.steps{max-width:700px;margin:auto;text-align:left;line-height:2;color:#45536b}
-.faq{max-width:700px;margin:15px auto;background:white;padding:18px;border-radius:10px;text-align:left}
-footer{background:#15274b;color:white;padding:30px 7%;text-align:center}
-.small{font-size:12px;color:#8290a5;line-height:1.6}
-footer .small{color:#c5cee0}
-@media(max-width:500px){.hero h1{font-size:30px}nav a{margin-left:7px;font-size:12px}}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,sans-serif;color:#172b45;background:#f7f9fc;line-height:1.65}
+header{background:#fff;padding:15px 5%;display:flex;align-items:center;justify-content:space-between;gap:10px;box-shadow:0 2px 12px #102b5010;position:sticky;top:0;z-index:5}
+.brand{font-size:17px;font-weight:800;color:#12365f}
+.brand span{display:block;font-size:11px;color:#66809e;font-weight:500}
+.navbtn{background:#eaf2ff;color:#174a8b;padding:9px 13px;border-radius:9px;text-decoration:none;font-size:13px;font-weight:bold}
+.hero{padding:55px 6% 48px;background:linear-gradient(145deg,#102b50,#1c5790);color:white}
+.tag{display:inline-block;background:#ffffff20;border:1px solid #ffffff40;padding:6px 12px;border-radius:30px;font-size:12px}
+.hero h1{font-size:34px;line-height:1.2;margin:18px 0 12px}
+.hero p{color:#dceaff;font-size:15px}
+.btn{display:inline-block;text-decoration:none;background:#16a36a;color:white;padding:14px 20px;border-radius:11px;font-weight:bold;text-align:center;margin-top:13px}
+.btn.secondary{background:white;color:#174a8b;margin-left:5px}
+.note{font-size:12px;color:#e0ebf8;margin-top:12px}
+section{padding:38px 6%}
+h2{font-size:25px;line-height:1.25;margin:0 0 12px;color:#15395f}
+.sub{color:#65778d;font-size:14px;margin-bottom:22px}
+.grid{display:grid;grid-template-columns:1fr;gap:14px}
+.card{background:white;border:1px solid #e7edf5;padding:20px;border-radius:16px;box-shadow:0 5px 18px #193b5c08}
+.card h3{margin:0 0 8px;color:#174a8b;font-size:18px}
+.icon{font-size:25px;margin-bottom:7px}
+.steps{display:grid;gap:12px}
+.step{display:flex;gap:13px;background:white;padding:16px;border-radius:13px;border:1px solid #e7edf5}
+.num{background:#e8f1ff;color:#174a8b;font-weight:bold;border-radius:10px;width:34px;height:34px;display:grid;place-items:center;flex-shrink:0}
+ul{padding-left:20px;color:#53677e}
+li{margin:7px 0}
+.notice{background:#fff8e8;border:1px solid #f1dfae;padding:16px;border-radius:12px;color:#71551b;font-size:13px}
+.faq details{background:white;border:1px solid #e7edf5;border-radius:12px;padding:15px;margin:10px 0}
+.faq summary{font-weight:bold;cursor:pointer;color:#174a8b}
+.faq p{font-size:14px;color:#5c6f84}
+.cta{background:#eaf2ff;text-align:center;padding:35px 6%}
+.cta p{color:#526b87}
+footer{text-align:center;background:#102b50;color:#d6e4f6;padding:24px 6%;font-size:12px}
+footer a{color:white}
+.sticky{position:fixed;bottom:0;left:0;right:0;background:white;padding:10px 14px;box-shadow:0 -4px 20px #102b501c;z-index:8}
+.sticky .btn{display:block;margin:0}
+body{padding-bottom:68px}
+@media(min-width:700px){
+.hero{padding:85px 12%}
+.hero h1{font-size:52px;max-width:700px}
+.hero p{max-width:650px;font-size:17px}
+section{padding:55px 12%}
+.grid{grid-template-columns:repeat(3,1fr)}
+.steps{grid-template-columns:repeat(2,1fr)}
+.sticky{display:none}
+body{padding-bottom:0}
+}
 </style>
 </head>
-
 <body>
 
 <header>
-<div class="logo">✦ Handwritten Projects</div>
-<nav>
-<a href="#plans">Plans</a>
-<a href="#process">Process</a>
-<a href="#faq">FAQ</a>
-</nav>
+<div class="brand">Vivekanand Hand Written Notes
+<span>Work From Home Information</span></div>
+<a class="navbtn" href="#work">Work Details</a>
 </header>
 
 <div class="hero">
-<p>WELCOME TO OUR PROJECT SERVICE</p>
-<h1>Neat & Organized<br>Handwritten Projects</h1>
-<p>Get assistance with handwritten assignments and project work.<br>Clear communication, transparent pricing and timely updates.</p>
-<a class="btn" href="#plans">Explore Plans ↓</a>
+<span class="tag">HANDWRITTEN NOTES • REMOTE WORK</span>
+<h1>Explore Handwritten Notes Work From Home</h1>
+<p>Learn about the work format, basic requirements, joining process and important terms before deciding to participate.</p>
+<a class="btn" href="https://t.me/+4H7-qfmV0pQ1MzY1" target="_blank" rel="noopener">Join Our Telegram →</a>
+<a class="btn secondary" href="#work">Know More</a>
+<div class="note">Please review all work conditions and payment terms before joining.</div>
 </div>
 
-<section id="plans">
-<h2>Our Project Plans</h2>
-<p>Choose a sample plan according to your requirements.</p>
-
-<div class="cards">
-<div class="card">
-<h3>Basic Plan</h3>
-<div class="price">₹550</div>
-<p>Basic handwritten project assistance</p>
-<p>Standard formatting</p>
-<p>Delivery timeline confirmed before order</p>
-<a class="btn" href="#contact">Enquire Now</a>
+<section id="work">
+<h2>About the Work</h2>
+<p class="sub">A simple overview of handwritten notes work.</p>
+<div class="grid">
+<div class="card"><div class="icon">✍️</div><h3>Handwritten Content</h3><p>Work may involve writing assigned notes or study material by hand according to the provided instructions.</p></div>
+<div class="card"><div class="icon">🏠</div><h3>Work From Home</h3><p>Work-related communication and task coordination can be handled remotely, subject to the actual assignment terms.</p></div>
+<div class="card"><div class="icon">📋</div><h3>Instructions</h3><p>Understand the writing format, deadlines, submission method and quality requirements before accepting a task.</p></div>
 </div>
-
-<div class="card">
-<h3>Standard Plan</h3>
-<div class="price">₹850</div>
-<p>Extended project assistance</p>
-<p>Organized presentation</p>
-<p>Progress updates</p>
-<a class="btn" href="#contact">Enquire Now</a>
-</div>
-
-<div class="card">
-<h3>Premium Plan</h3>
-<div class="price">₹1,250</div>
-<p>Customized project assistance</p>
-<p>Priority communication</p>
-<p>Requirements confirmed in advance</p>
-<a class="btn" href="#contact">Enquire Now</a>
-</div>
-</div>
-<p class="small">These are demo prices. Confirm actual scope, charges and terms before accepting orders.</p>
 </section>
 
-<section id="process" style="background:#fff">
-<h2>How It Works</h2>
+<section>
+<h2>How Does It Work?</h2>
+<p class="sub">Review the process before you join.</p>
 <div class="steps">
-<p>① Share your project requirements.</p>
-<p>② Confirm scope, price and delivery date.</p>
-<p>③ Review the agreed work details.</p>
-<p>④ Receive the completed work as agreed.</p>
+<div class="step"><div class="num">1</div><div><b>Join Telegram</b><br>Open the official Telegram group and read the available information.</div></div>
+<div class="step"><div class="num">2</div><div><b>Understand Requirements</b><br>Confirm eligibility, task details, deadlines and any applicable charges.</div></div>
+<div class="step"><div class="num">3</div><div><b>Review the Assignment</b><br>Check sample format, quantity, quality standards and submission instructions.</div></div>
+<div class="step"><div class="num">4</div><div><b>Confirm Terms</b><br>Proceed only after receiving clear written terms for acceptance, payment and any refund policy.</div></div>
 </div>
 </section>
 
-<section id="faq">
-<h2>Frequently Asked Questions</h2>
-<div class="faq"><b>How do I place an order?</b><p>Contact us with your requirements to discuss availability and pricing.</p></div>
-<div class="faq"><b>Is payment refundable?</b><p>Refund and cancellation terms must be confirmed before payment.</p></div>
-<div class="faq"><b>Is this a job or earning opportunity?</b><p>No guaranteed job, income or employment is offered through this demo page.</p></div>
+<section>
+<h2>Basic Requirements</h2>
+<div class="card">
+<ul>
+<li>Legible handwriting and attention to detail.</li>
+<li>Ability to follow the provided writing format.</li>
+<li>Access to a smartphone for communication.</li>
+<li>Ability to meet mutually agreed deadlines.</li>
+<li>Review the complete task and payment terms before starting.</li>
+</ul>
+</div>
 </section>
 
-<section id="contact">
-<h2>Have a Project in Mind?</h2>
-<p>Contact us to discuss your requirements.</p>
-<a class="btn" href="mailto:your-email@example.com">Contact Us</a>
-<p class="small">Replace the demo email with your verified business contact before publishing.</p>
+<section>
+<h2>Important Information</h2>
+<div class="notice"><b>Please note:</b> Earnings, workload, selection, payment timelines and refund eligibility must be confirmed from the actual written terms. No income or job outcome is guaranteed by this information page. Do not pay any fee without verifying the organization, purpose, receipt and refund conditions.</div>
 </section>
+
+<section class="faq">
+<h2>Frequently Asked Questions</h2>
+<details><summary>Is this work from home?</summary><p>The work is presented as remote handwritten-notes work. Confirm the actual location and task requirements before joining.</p></details>
+<details><summary>How do I get work details?</summary><p>Use the Telegram joining link and review the instructions shared there.</p></details>
+<details><summary>Is there a fixed income?</summary><p>No fixed income is stated here. Confirm task-wise compensation and payment conditions in writing.</p></details>
+<details><summary>Should I pay a registration fee?</summary><p>Do not pay until you independently verify the organization, fee purpose, refund policy and written terms.</p></details>
+<details><summary>How can I ask questions?</summary><p>Join the Telegram group and ask for the official work details before making a commitment.</p></details>
+</section>
+
+<div class="cta">
+<h2>Want to Know More?</h2>
+<p>Visit our Telegram group to review the available information and ask questions.</p>
+<a class="btn" href="https://t.me/+4H7-qfmV0pQ1MzY1" target="_blank" rel="noopener">Continue to Telegram →</a>
+</div>
 
 <footer>
-<h3>Handwritten Projects</h3>
-<p>Project assistance with clear terms and communication.</p>
-<p class="small">Demo website. Sample pricing and contact details require verification before public use.</p>
+<b>Vivekanand Hand Written Notes</b>
+<p>Work From Home Information Page</p>
+<p>Review all terms independently before joining or making any payment.</p>
 </footer>
 
+<div class="sticky">
+<a class="btn" href="https://t.me/+4H7-qfmV0pQ1MzY1" target="_blank" rel="noopener">Join Telegram →</a>
+</div>
 </body>
 </html>
