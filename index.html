@@ -1,144 +1,241 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Vivekanand Hand Written Notes</title>
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{
-  font-family:Arial,sans-serif;
-  background:#f5f7fb;
-  color:#172033;
-  line-height:1.6;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-header{
-  background:#102b50;
-  color:white;
-  padding:18px 16px;
-  text-align:center;
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+  line-height: 1.6;
 }
-header h1{font-size:23px}
-header p{font-size:13px;color:#d7e5fa}
-.hero{
-  background:linear-gradient(135deg,#102b50,#1764a5);
-  color:white;
-  text-align:center;
-  padding:48px 18px;
+
+header {
+  background: #102b50;
+  color: white;
+  padding: 18px 16px;
+  text-align: center;
 }
-.hero h2{font-size:30px;line-height:1.25;margin-bottom:15px}
-.hero p{max-width:550px;margin:auto;color:#e5efff}
-.btn{
-  display:inline-block;
-  background:#16a765;
-  color:white;
-  text-decoration:none;
-  padding:13px 22px;
-  border-radius:9px;
-  font-weight:bold;
-  margin-top:22px;
+
+header h1 {
+  font-size: 23px;
 }
-section{padding:38px 16px;max-width:1050px;margin:auto}
-.section-title{text-align:center;font-size:25px;margin-bottom:10px}
-.sub{text-align:center;color:#667085;margin-bottom:25px;font-size:14px}
-.plans{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-  gap:16px;
+
+header p {
+  font-size: 13px;
+  color: #d7e5fa;
 }
-.card{
-  background:white;
-  border:1px solid #e4e9f1;
-  border-radius:15px;
-  padding:22px;
-  box-shadow:0 5px 18px rgba(20,40,70,.05);
+
+.hero {
+  background: linear-gradient(135deg, #102b50, #1764a5);
+  color: white;
+  text-align: center;
+  padding: 48px 18px;
 }
-.card.featured{border:2px solid #2476c5}
-.tag{
-  display:inline-block;
-  background:#e8f2ff;
-  color:#1764a5;
-  font-size:12px;
-  font-weight:bold;
-  padding:5px 10px;
-  border-radius:20px;
-  margin-bottom:10px;
+
+.hero h2 {
+  font-size: 30px;
+  line-height: 1.25;
+  margin-bottom: 15px;
 }
-.price{font-size:30px;font-weight:bold;color:#102b50;margin:8px 0}
-.card ul{padding-left:20px;margin:16px 0;color:#475467}
-.card li{margin:7px 0}
-.payout{
-  background:#f0f8f3;
-  border-radius:9px;
-  padding:12px;
-  color:#176b40;
-  font-size:14px;
+
+.hero p {
+  max-width: 550px;
+  margin: auto;
+  color: #e5efff;
 }
-.steps{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:14px;
+
+.hiring {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 9px 18px;
+  background: #e8fff1;
+  color: #087a42;
+  border: 1px solid #91e5b5;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
-.step{
-  background:white;
-  padding:20px;
-  border-radius:12px;
-  border:1px solid #e4e9f1;
+
+.btn {
+  display: inline-block;
+  background: #16a765;
+  color: white;
+  text-decoration: none;
+  padding: 13px 22px;
+  border-radius: 9px;
+  font-weight: bold;
+  margin-top: 22px;
 }
-.number{
-  background:#1764a5;
-  color:white;
-  width:34px;height:34px;
-  border-radius:50%;
-  display:grid;place-items:center;
-  font-weight:bold;margin-bottom:12px;
+
+.btn:hover {
+  background: #108752;
 }
-.notice{
-  background:#fff8e8;
-  border:1px solid #f3dfae;
-  padding:17px;
-  border-radius:12px;
-  font-size:13px;
-  color:#76520b;
+
+section {
+  padding: 38px 16px;
+  max-width: 1050px;
+  margin: auto;
 }
-.faq details{
-  background:white;
-  padding:15px;
-  border-radius:10px;
-  margin:10px 0;
-  border:1px solid #e4e9f1;
+
+.section-title {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 10px;
 }
-summary{font-weight:bold;cursor:pointer}
-footer{
-  background:#102b50;
-  color:white;
-  text-align:center;
-  padding:28px 15px;
-  font-size:13px;
+
+.sub {
+  text-align: center;
+  color: #667085;
+  margin-bottom: 25px;
+  font-size: 14px;
 }
-footer a{color:#a9d8ff}
-.activity{
-  position:fixed;
-  left:12px;
-  bottom:14px;
-  width:225px;
-  background:white;
-  border:1px solid #dce5ee;
-  border-radius:10px;
-  padding:11px 13px;
-  box-shadow:0 5px 20px #0002;
-  font-size:12px;
-  z-index:5;
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
 }
-.activity strong{display:block;color:#1764a5}
-.activity small{color:#667085}
-@media(max-width:480px){
-  .hero{padding:38px 16px}
-  .hero h2{font-size:26px}
-  section{padding:30px 14px}
-  .section-title{font-size:23px}
-  .activity{width:190px;bottom:10px;left:10px}
+
+.card {
+  background: white;
+  border: 1px solid #e4e9f1;
+  border-radius: 15px;
+  padding: 22px;
+  box-shadow: 0 5px 18px rgba(20,40,70,.05);
+}
+
+.card.featured {
+  border: 2px solid #2476c5;
+}
+
+.tag {
+  display: inline-block;
+  background: #e8f2ff;
+  color: #1764a5;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 30px;
+  font-weight: bold;
+  color: #102b50;
+  margin: 8px 0;
+}
+
+.card ul {
+  padding-left: 20px;
+  margin: 16px 0;
+  color: #475467;
+}
+
+.card li {
+  margin: 7px 0;
+}
+
+.payout {
+  background: #f0f8f3;
+  border-radius: 9px;
+  padding: 12px;
+  color: #176b40;
+  font-size: 14px;
+}
+
+.notice {
+  background: #fff8e8;
+  border: 1px solid #f3dfae;
+  padding: 17px;
+  border-radius: 12px;
+  font-size: 13px;
+  color: #76520b;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+}
+
+.step {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e4e9f1;
+}
+
+.number {
+  background: #1764a5;
+  color: white;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.faq details {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+  border: 1px solid #e4e9f1;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  background: #102b50;
+  color: white;
+  text-align: center;
+  padding: 28px 15px;
+  font-size: 13px;
+}
+
+footer a {
+  color: #a9d8ff;
+}
+
+@media(max-width:480px) {
+  .hero {
+    padding: 38px 16px;
+  }
+
+  .hero h2 {
+    font-size: 26px;
+  }
+
+  section {
+    padding: 30px 14px;
+  }
+
+  .section-title {
+    font-size: 23px;
+  }
+
+  .card {
+    padding: 20px;
+  }
 }
 </style>
 </head>
@@ -151,176 +248,269 @@ footer a{color:#a9d8ff}
 </header>
 
 <div class="hero">
+
   <h2>Start Your Handwritten Notes Project</h2>
-  <p>Explore the available plans, understand the process and review all terms before registration.</p>
-  <a class="btn" href="https://t.me/+4H7-qfmV0pQ1MzY1" target="_blank">
+
+  <p>
+    Explore the available plans, understand the process
+    and review all terms before registration.
+  </p>
+
+  <div class="hiring">
+    ● HIRING IS LIVE
+  </div>
+
+  <br>
+
+  <a class="btn"
+     href="https://t.me/+4H7-qfmV0pQ1MzY1"
+     target="_blank"
+     rel="noopener noreferrer">
     Join Telegram
   </a>
+
 </div>
 
 <section id="courses">
+
   <h2 class="section-title">Course Details</h2>
-  <p class="sub">Review the registration fee, page count and advertised project amount.</p>
+
+  <p class="sub">
+    Explore the available project plans and their details.
+  </p>
 
   <div class="plans">
 
     <div class="card">
+
       <span class="tag">Basic Plan</span>
+
       <h3>Basic</h3>
+
       <div class="price">₹550</div>
+
       <p>Registration fee</p>
+
       <ul>
         <li>50 handwritten pages</li>
         <li>Completion period: 7 days</li>
         <li>Project instructions provided after confirmation</li>
       </ul>
+
       <div class="payout">
-        Advertised project amount: <b>₹22,000</b>
+        Advertised project amount:
+        <b>₹22,000</b>
       </div>
-      <a class="btn" href="https://t.me/+4H7-qfmV0pQ1MzY1" target="_blank">Ask About Basic</a>
+
+      <a class="btn"
+         href="https://t.me/+4H7-qfmV0pQ1MzY1"
+         target="_blank"
+         rel="noopener noreferrer">
+        Ask About Basic
+      </a>
+
     </div>
 
     <div class="card featured">
+
       <span class="tag">Standard Plan</span>
+
       <h3>Standard</h3>
+
       <div class="price">₹850</div>
+
       <p>Registration fee</p>
+
       <ul>
         <li>80 handwritten pages</li>
         <li>Completion period: 15 days</li>
         <li>Project instructions provided after confirmation</li>
       </ul>
+
       <div class="payout">
-        Advertised project amount: <b>₹30,000</b>
+        Advertised project amount:
+        <b>₹30,000</b>
       </div>
-      <a class="btn" href="https://t.me/+4H7-qfmV0pQ1MzY1" target="_blank">Ask About Standard</a>
+
+      <a class="btn"
+         href="https://t.me/+4H7-qfmV0pQ1MzY1"
+         target="_blank"
+         rel="noopener noreferrer">
+        Ask About Standard
+      </a>
+
     </div>
 
     <div class="card">
+
       <span class="tag">Premium Plan</span>
+
       <h3>Premium</h3>
+
       <div class="price">₹1,250</div>
+
       <p>Registration fee</p>
+
       <ul>
         <li>120 handwritten pages</li>
         <li>Completion period: 15–30 days</li>
         <li>Project instructions provided after confirmation</li>
       </ul>
+
       <div class="payout">
-        Advertised project amount: <b>₹45,000</b>
+        Advertised project amount:
+        <b>₹45,000</b>
       </div>
-      <a class="btn" href="https://t.me/+4H7-qfmV0pQ1MzY1" target="_blank">Ask About Premium</a>
+
+      <a class="btn"
+         href="https://t.me/+4H7-qfmV0pQ1MzY1"
+         target="_blank"
+         rel="noopener noreferrer">
+        Ask About Premium
+      </a>
+
     </div>
 
   </div>
+
 </section>
 
 <section>
+
   <div class="notice">
-    <b>Important information:</b> Advertised project amounts are not guaranteed earnings.
-    Confirm eligibility, quality requirements, payment schedule, refund policy and all
-    written terms before paying any registration fee. Do not make payment based only
-    on promotional claims.
+
+    <b>Important Information</b>
+
+    <p>
+      Advertised project amounts are not guaranteed earnings.
+      Confirm eligibility, work acceptance criteria, payment
+      schedule, advance payment conditions and refund policy
+      in writing before paying any registration fee.
+    </p>
+
   </div>
+
 </section>
 
 <section>
+
   <h2 class="section-title">How It Works</h2>
-  <p class="sub">Understand the process before proceeding.</p>
+
+  <p class="sub">
+    Understand the process before proceeding.
+  </p>
 
   <div class="steps">
+
     <div class="step">
       <div class="number">1</div>
       <h3>Explore Plans</h3>
-      <p>Compare the page count, time period, fee and project terms.</p>
+      <p>
+        Compare the page count, time period, fee
+        and project terms.
+      </p>
     </div>
+
     <div class="step">
       <div class="number">2</div>
       <h3>Confirm Details</h3>
-      <p>Contact the team and request written details about work, payment and refund conditions.</p>
+      <p>
+        Request written details about work,
+        payment and refund conditions.
+      </p>
     </div>
+
     <div class="step">
       <div class="number">3</div>
       <h3>Review Instructions</h3>
-      <p>Understand handwriting format, submission method and quality requirements.</p>
+      <p>
+        Understand handwriting format,
+        submission method and quality requirements.
+      </p>
     </div>
+
     <div class="step">
       <div class="number">4</div>
       <h3>Submit Work</h3>
-      <p>Submit the completed work and follow the documented review and payment process.</p>
+      <p>
+        Submit completed work and follow
+        the documented review and payment process.
+      </p>
     </div>
+
   </div>
+
 </section>
 
 <section>
+
   <h2 class="section-title">Frequently Asked Questions</h2>
+
   <div class="faq">
+
     <details>
       <summary>Is the advertised amount guaranteed?</summary>
-      <p>No. Confirm the written eligibility, acceptance criteria and payment terms before joining.</p>
+      <p>
+        No. Confirm written eligibility, acceptance criteria
+        and payment terms before joining.
+      </p>
     </details>
+
     <details>
       <summary>What is the completion period?</summary>
-      <p>It depends on the selected plan: Basic 7 days, Standard 15 days, Premium 15–30 days.</p>
+      <p>
+        Basic: 7 days. Standard: 15 days.
+        Premium: 15–30 days.
+      </p>
     </details>
+
     <details>
       <summary>Where can I ask questions?</summary>
-      <p>Use the Telegram contact link to request complete written project details.</p>
+      <p>
+        Use the Telegram contact link to request
+        complete written project details.
+      </p>
     </details>
+
     <details>
       <summary>Is there an advance payment?</summary>
-      <p>Ask for written confirmation of any advance, its conditions and the payment timeline.</p>
+      <p>
+        Ask for written confirmation of any advance,
+        its conditions and payment timeline.
+      </p>
     </details>
+
   </div>
+
 </section>
 
 <section style="text-align:center">
+
   <h2 class="section-title">Need More Information?</h2>
-  <p class="sub">Contact the Telegram team before making a decision.</p>
-  <a class="btn" href="https://t.me/+4H7-qfmV0pQ1MzY1" target="_blank">
+
+  <p class="sub">
+    Contact the Telegram team before registration.
+  </p>
+
+  <a class="btn"
+     href="https://t.me/+4H7-qfmV0pQ1MzY1"
+     target="_blank"
+     rel="noopener noreferrer">
     Open Telegram
   </a>
+
 </section>
 
 <footer>
+
   <p><b>Vivekanand Hand Written Notes</b></p>
+
   <p>Review all terms and conditions before registration.</p>
+
   <p>© 2026 All Rights Reserved</p>
+
 </footer>
 
-<div class="activity" id="activity" aria-live="polite">
-  <strong>Sample activity preview</strong>
-  <span id="activityText">Example notification</span>
-  <small>Illustrative sample — not a verified transaction.</small>
-</div>
-
-<script>
-const sampleActivities = [
-  ["Mohit","₹11,000"],
-  ["Rohan","₹12,500"],
-  ["Aman","₹10,000"],
-  ["Priya","₹8,500"],
-  ["Karan","₹15,000"],
-  ["Neha","₹9,000"],
-  ["Rahul","₹12,000"],
-  ["Anjali","₹7,500"],
-  ["Vikas","₹14,000"],
-  ["Pooja","₹10,500"]
-];
-
-let activityIndex = 0;
-
-function showSampleActivity(){
-  const item = sampleActivities[activityIndex];
-  document.getElementById("activityText").textContent =
-    item[0] + " — example amount " + item[1];
-
-  activityIndex = (activityIndex + 1) % sampleActivities.length;
-}
-
-showSampleActivity();
-setInterval(showSampleActivity, 4000);
-</script>
-
 </body>
-</html>
+    </html>
+    
